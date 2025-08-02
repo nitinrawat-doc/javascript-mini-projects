@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Number</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        background-color: black;
+        text-align: center;
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+      p {
+        margin-left: 30px;
+      }
+      #guess {
+        font-size: xxx-large;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .guessField {
+        margin-top: 20px;
+      }
+      .guessSubmit {
+        margin-top: 30px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: white;
+        border-radius: 10px;
+        border: 5px solid rgba(0, 0, 0, 0.76);
+      }
+      .pg {
+        margin-left: 130px;
+      }
+      .gr {
+        margin-left: 110px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.74); color: white">
+    <div id="wrapper">
+      <h1>Number Guessing Game</h1>
+      <p>Try and guess a random number between 1 and 100.</p>
+      <p>You have 10 attempts to guess the right number.</p>
+      <br />
+      <form class="form">
+        <label2 for="guessField" id="guess">Guess a number</label2>
+        <input type="text" id="guessField" class="guessField" />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit guess"
+          class="guessSubmit"
+        />
+      </form>
+      <div class="resultParas">
+        <p class="pg">Previous Guesses: <span class="guesses"></span></p>
+        <p class="gr">Guesses Remaining: <span class="LastResult">10</span></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+
+    <script src="guess.js"></script>
+  </body>
+</html>
